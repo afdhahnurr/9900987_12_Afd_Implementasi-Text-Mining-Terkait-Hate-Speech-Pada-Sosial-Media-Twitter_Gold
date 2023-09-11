@@ -1,0 +1,13 @@
+parameters:
+  - name: Teks
+    in: formData
+    type: string
+    required: true
+responses:
+  200:
+    description: Hasil Cleansing
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
