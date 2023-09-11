@@ -1,0 +1,16 @@
+summary: Upload and clean a csv file
+consumes:
+  - multipart/form-data
+parameters:
+  - in: formData
+    name: file
+    type: file
+    required: true
+    description: The csv file to upload and clean
+responses:
+  200:
+    description: The cleaned csv file as a json response
+    schema:
+      type: array
+      items:
+        type: object
